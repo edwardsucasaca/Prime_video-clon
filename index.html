@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <link rel="icon" href="https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!--Barra de navegacion-->
+        <div class="nav-contenedor">
+            <div class="nav-contenedor-2">
+                <div class="logo">
+                    <a href="#"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDczIiBoZWlnaHQ9IjE0NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMTQuODMgOTIuMzY2Yy4xNTgtMS4wMjMuOTY3LTEuODAyIDIuMDkxLTEuODAyLjUyNCAwIDEuMTE4LjE3MSAxLjc0NC41NjIgMzQuNzMxIDIxLjc4MSA3Ny42OTcgMzQuOTAzIDEyMi4wNjcgMzQuOTAzIDI5Ljk0MyAwIDYyLjg0MS02LjcwMSA5My4xMTctMjAuNTQ0IDQuNTYzLTIuMDc5IDguMzg2IDMuMjM5IDMuOTIyIDYuODExLTI3LjAwOCAyMS40NzItNjYuMTYzIDMyLjg5Ny05OS44NzkgMzIuODk3LTQ3LjI0OCAwLTg5Ljc5NS0xOC44My0xMjIuMDA0LTUwLjE2OC0uNjMyLS42MTQtLjk2NC0xLjI4Ny0xLjA1OC0xLjkxOXYtLjc0eiIvPjxwYXRoIGQ9Ik0zMTUuNDkzIDk1Ljc1MWM3Ljk4Ni02LjAzIDE4LjYwNC04LjA0MiAyNy40MDgtOC4wNDIgOC4yMzUgMCAxNC44ODYgMS43NjMgMTYuMzAyIDMuNjQ4IDIuOTc2IDMuOTMzLS43NjYgMzEuMjAxLTE1LjI2MSA0NC4yMDYtMi4yMTggMi4wMTQtNC4zMjguOTI5LTMuMzUtMS42OTkgMy4yNTktOC43MjIgMTAuNTUzLTI4LjMwNiA3LjA5Ni0zMy4wNTQtMy40NTItNC43NTktMjIuODM1LTIuMjY4LTMxLjUyNy0xLjE0NS0xLjM0Ny4xNzEtMi4xMTMtLjM4LTIuMjI1LTEuMjAxdi0uNDQzYy4wOTEtLjcxMi41OTYtMS41NDMgMS41NTctMi4yN3pNNDUwLjM1OSAxOS44NjNjNy4xIDAgMTIuNjQ4IDIuMTUyIDE2LjY0NSA2LjQ1NkM0NzEuMDAxIDMwLjYyMiA0NzMgMzYuNTk2IDQ3MyA0NC4yNDFjMCA3LjcwNC0xLjk5OSAxMy43MDgtNS45OTYgMTguMDEyLTMuOTk3IDQuMzA0LTkuNTQ1IDYuNDU2LTE2LjY0NSA2LjQ1Ni03LjA5OSAwLTEyLjY0OC0yLjE1Mi0xNi42NDUtNi40NTZzLTUuOTk2LTEwLjMwOC01Ljk5Ni0xOC4wMTJjMC03LjY0NSAxLjk5OS0xMy42MTkgNS45OTYtMTcuOTIyIDMuOTk3LTQuMzA0IDkuNTQ2LTYuNDU2IDE2LjY0NS02LjQ1NnptMCAxMC4xMTJjLTYuMjY0IDAtOS4zOTYgNC43NTUtOS4zOTYgMTQuMjY2IDAgOS41NyAzLjEzMiAxNC4zNTUgOS4zOTYgMTQuMzU1IDYuMjY0IDAgOS4zOTctNC43ODUgOS4zOTctMTQuMzU1IDAtOS41MTEtMy4xMzMtMTQuMjY2LTkuMzk3LTE0LjI2NnpNNDAzLjE5MSAyMC4yOWM1LjQzMiAwIDkuNjg0IDEuMzI4IDEyLjc0NyAzLjk4NCAzLjA2NCAyLjY1NyA0LjU5OSA2LjIwMSA0LjU5OSAxMC42MjYgMCA0LjQzMi0xLjY1MyA3Ljc4Mi00Ljk0NSAxMC4wNTEtMy4zIDIuMjc1LTguMTY0IDMuNDEtMTQuNTg2IDMuNDEtMy4zMjkgMC02LjIyMy0uMzIxLTguNjczLS45Ny4zNDcgMy45NTQgMS41MzUgNi43OSAzLjU1IDguNDk5IDIuMDE1IDEuNzA4IDUuMDY0IDIuNTY2IDkuMTUzIDIuNTY2IDEuNjMxIDAgMy4yMjYtLjEwNCA0Ljc3Ni0uMzEzIDEuNTQzLS4yMDIgMy42OTEtLjY2NCA2LjQzNy0xLjM2Ni4xNjktLjA1OS4zNDYtLjEwNC41MjQtLjEzNC4xNzctLjAzLjMxNy0uMDQ1LjQzNS0uMDQ1Ljk5NyAwIDEuNDkxLjY3OSAxLjQ5MSAyLjAzN3Y0LjA3NWMwIC45NC0uMTMzIDEuNjA0LS4zOTEgMS45OTItLjI2Ni4zOC0uNzc1LjcyNC0xLjUzNSAxLjAxNS00LjI2NyAxLjY0OS04Ljc5MiAyLjQ3Ny0xMy41ODIgMi40NzctNy4yNDEgMC0xMi44LTItMTYuNjgyLTYuMDIyLTMuODgzLTQuMDE0LTUuODI0LTkuNzY3LTUuODI0LTE3LjI2NiAwLTcuNjcxIDEuOTg1LTEzLjY5MiA1Ljk1Ni0xOC4wNTggMy45NzItNC4zNzIgOS40ODYtNi41NTggMTYuNTUtNi41NTh6bS0uOTYgOC45NDZjLTUuNjEgMC04Ljg1IDMuNDg1LTkuNzIxIDEwLjQ0NyAyLjMzMi40NzcgNC45MzEuNzA5IDcuNzk1LjcwOSAyLjk3NCAwIDUuMTM3LS40NTYgNi40OC0xLjM3MyAxLjM0NC0uOTExIDIuMDE2LTIuMzE0IDIuMDE2LTQuMjAxIDAtMy43MjQtMi4xOTMtNS41ODItNi41Ny01LjU4MnpNMzY5LjA2OS41NDJjLjgzNSAwIDEuNDE3LjE2NSAxLjc0NS40OTYuMzI4LjMzMS40OTIuOTE4LjQ5MiAxLjc2MXY2Mi4yOThjMCAuNzgzLS4xNjQgMS4zNTQtLjQ5MiAxLjcxNi0uMzI4LjM2MS0uOTEuNTQxLTEuNzQ1LjU0MWgtNy4xNTljLS43MTYgMC0xLjI2OC0uMTUtMS42NTYtLjQ1MS0uMzg3LS4zMDEtLjY3MS0uODEzLS44NS0xLjUzNWwtLjUzNy0yLjA3N2MtMy42OTkgMy4zNzEtOC4wODMgNS4wNTYtMTMuMTU1IDUuMDU2LTMuODc3IDAtNy4yNDgtMS4wMDgtMTAuMTEyLTMuMDI0LTIuODY0LTIuMDE3LTUuMDU2LTQuODE1LTYuNTc3LTguMzk3LTEuNTIyLTMuNTgxLTIuMjgyLTcuNzE5LTIuMjgyLTEyLjQxNCAwLTcuNDY0IDEuNzU5LTEzLjQzOCA1LjI3OS0xNy45MjIgMy41Mi00LjQ4NSA4LjE3NC02LjcyNyAxMy45NjEtNi43MjcgNC43MTMgMCA4LjggMS4zNTQgMTIuMjYgNC4wNjNWMi43OTljMC0uODQzLjE3OS0xLjQzLjUzNy0xLjc2MS4zNTgtLjMzMS45MjUtLjQ5NiAxLjctLjQ5Nmg4LjU5MXptLTE5LjY4OCAyOS4yNTNjLTMuMTYyIDAtNS41MTggMS4xODktNy4wNjkgMy41NjYtMS41NTEgMi4zNzgtMi4zMjcgNS45NzQtMi4zMjcgMTAuNzg5IDAgNC44MTYuODIgOC4zOTcgMi40NjEgMTAuNzQ1IDEuNjQxIDIuMzQ3IDQuMTYxIDMuNTIxIDcuNTYyIDMuNTIxIDIuODY0IDAgNS42MDgtLjg0MyA4LjIzMy0yLjUyOFYzMi4wNTJjLTIuNTY1LTEuNTA1LTUuNTE5LTIuMjU3LTguODYtMi4yNTd6TTMwNy4zMjMgNjcuMzU0Yy0uNzc2IDAtMS4zNDMtLjE4LTEuNzAxLS41NDEtLjM1OC0uMzYyLS41MzctLjkzMy0uNTM3LTEuNzE2VjIzLjQ3NWMwLS44NDMuMTc5LTEuNDMuNTM3LTEuNzYxLjM1OC0uMzMxLjkyNS0uNDk3IDEuNzAxLS40OTdoOC41OTFjLjgzNSAwIDEuNDE3LjE2NiAxLjc0NS40OTcuMzI4LjMzMS40OTIuOTE4LjQ5MiAxLjc2MXY0MS42MjJjMCAuNzgzLS4xNjQgMS4zNTQtLjQ5MiAxLjcxNi0uMzI4LjM2MS0uOTEuNTQxLTEuNzQ1LjU0MWgtOC41OTF6TTMxMS42MTggMTQuMDg1Yy0yLjI2NyAwLTQuMDg3LS42MzItNS40NTktMS44OTYtMS4zNzItMS4yNjQtMi4wNTgtMi45OC0yLjA1OC01LjE0NyAwLTIuMTY2LjY4Ni0zLjg4MiAyLjA1OC01LjE0NkMzMDcuNTMxLjYzMiAzMDkuMzUxIDAgMzExLjYxOCAwYzIuMjY3IDAgNC4wODcuNjMyIDUuNDU5IDEuODk2IDEuMzcyIDEuMjY0IDIuMDU4IDIuOTggMi4wNTggNS4xNDYgMCAyLjE2Ny0uNjg2IDMuODgzLTIuMDU4IDUuMTQ3LTEuMzcyIDEuMjY0LTMuMTkyIDEuODk2LTUuNDU5IDEuODk2ek0yNzEuODIyIDY3LjM1NGMtLjU5NyAwLTEuMDg5LS4wNzUtMS40NzctLjIyNWEyLjM0IDIuMzQgMCAwMS0uOTg0LS43MjNjLS4yNjktLjMzMS0uNTIyLS43OTctLjc2MS0xLjM5OWwtMTUuMzAzLTQwLjE3OGEzNi43MjQgMzYuNzI0IDAgMDEtLjQ0Ny0xLjI2NCAzLjE5NiAzLjE5NiAwIDAxLS4xNzktLjk5M2MwLS45MDMuNTk3LTEuMzU1IDEuNzktMS4zNTVoOC45NDljLjk1NCAwIDEuNjU1LjE4MSAyLjEwMy41NDIuNDQ3LjM2MS43OS45NjMgMS4wMjkgMS44MDZsOS4yMTcgMzEuOTYyIDkuMzk3LTMxLjk2MmMuMjM4LS44NDMuNTgxLTEuNDQ1IDEuMDI5LTEuODA2LjQ0Ny0uMzYxIDEuMTQ4LS41NDIgMi4xMDMtLjU0Mmg4LjY4YzEuMTk0IDAgMS43OS40NTIgMS43OSAxLjM1NSAwIC4zMDEtLjA1OS42MzItLjE3OS45OTMtLjExOS4zNjEtLjI2OC43ODItLjQ0NyAxLjI2NGwtMTUuMzAzIDQwLjE3OGMtLjIzOS42MDItLjQ5MiAxLjA2OC0uNzYxIDEuMzk5YTIuNDA2IDIuNDA2IDAgMDEtLjkzOS43MjNjLS4zNTguMTUtLjg2NS4yMjUtMS41MjIuMjI1aC03Ljc4NXpNMjE0LjcxNyAxOS44NjljNS41NzQgMCA5LjkzNiAxLjM1NSAxMy4wNzkgNC4wNjUgMy4xNDIgMi43MSA0LjcxOCA2LjMyNiA0LjcxOCAxMC44NCAwIDQuNTIxLTEuNjk3IDcuOTM5LTUuMDc0IDEwLjI1My0zLjM4NiAyLjMyMi04LjM3NiAzLjQ3OS0xNC45NjUgMy40NzktMy40MTUgMC02LjM4NC0uMzI4LTguODk4LS45OS4zNTYgNC4wMzUgMS41NzUgNi45MjcgMy42NDMgOC42NyAyLjA2NyAxLjc0NCA1LjE5NSAyLjYxOSA5LjM5IDIuNjE5IDEuNjc0IDAgMy4zMS0uMTA3IDQuOS0uMzIgMS41ODMtLjIwNSAzLjc4Ni0uNjc3IDYuNjA0LTEuMzkzYTMuMzMgMy4zMyAwIDAxLjUzNy0uMTM3Yy4xODItLjAzLjMyNi0uMDQ2LjQ0Ny0uMDQ2IDEuMDIyIDAgMS41My42OTMgMS41MyAyLjA3OXY0LjE1NmMwIC45NTktLjEzNyAxLjYzNi0uNDAyIDIuMDMyLS4yNzIuMzg4LS43OTUuNzM5LTEuNTc1IDEuMDM1LTQuMzc3IDEuNjgzLTkuMDE5IDIuNTI4LTEzLjkzNCAyLjUyOC03LjQyOSAwLTEzLjEzMi0yLjA0LTE3LjExNS02LjE0My0zLjk4NC00LjA5Ni01Ljk3NS05Ljk2NC01Ljk3NS0xNy42MTUgMC03LjgyNSAyLjAzNy0xMy45NjggNi4xMTEtMTguNDIxIDQuMDc0LTQuNDYxIDkuNzMyLTYuNjkxIDE2Ljk3OS02LjY5MXptLS45ODUgOS4xMjdjLTUuNzU1IDAtOS4wOCAzLjU1NS05Ljk3MyAxMC42NTcgMi4zOTMuNDg3IDUuMDU5LjcyMyA3Ljk5Ny43MjMgMy4wNTIgMCA1LjI3MS0uNDY0IDYuNjQ5LTEuNDAxIDEuMzc4LS45MjggMi4wNjctMi4zNTkgMi4wNjctNC4yODUgMC0zLjc5OS0yLjI0OS01LjY5NC02Ljc0LTUuNjk0ek0xMjYuMDIzIDI1LjY1NGMzLjE3My0yLjEwOSA2LjAzNi0zLjYwMSA4LjU4LTQuNDY5YTI0LjA2MyAyNC4wNjMgMCAwMTcuODY5LTEuMzE3YzUuMzkyIDAgOS4xOTMgMS45MzQgMTEuNDEyIDUuNzg2IDMuMDUyLTIuMDQ4IDUuOTMtMy41MjUgOC42MjYtNC40MjNhMjYuMDY0IDI2LjA2NCAwIDAxOC4zNTMtMS4zNjNjNC4xOTUgMCA3LjQ0NCAxLjE4IDkuNzU0IDMuNTI1IDIuMzAyIDIuMzUyIDMuNDYxIDUuNjMzIDMuNDYxIDkuODVWNjUuMTNjMCAuNzg0LS4xNjcgMS4zNTUtLjQ5MiAxLjcxMy0uMzM0LjM2NS0uOTE3LjU0LTEuNzU3LjU0aC04LjYyNmMtLjc4IDAtMS4zNDgtLjE3NS0xLjcwNC0uNTQtLjM2My0uMzU4LS41NDUtLjkyOS0uNTQ1LTEuNzEzVjM2LjEzNWMwLTQuMDk1LTEuODI1LTYuMTQzLTUuNDgzLTYuMTQzLTMuMjM0IDAtNi40OTguNzc3LTkuNzkyIDIuMzQ1VjY1LjEzYzAgLjc4NC0uMTY3IDEuMzU1LS40OTIgMS43MTMtLjMzMy4zNjUtLjkxNy41NC0xLjc1Ny41NGgtOC42MjZjLS43OCAwLTEuMzQ4LS4xNzUtMS43MDQtLjU0LS4zNjMtLjM1OC0uNTM3LS45MjktLjUzNy0xLjcxM1YzNi4xMzVjMC00LjA5NS0xLjgzMy02LjE0My01LjQ4My02LjE0My0zLjM1NSAwLTYuNjQ5LjgwNy05Ljg5MSAyLjQzNlY2NS4xM2MwIC43ODQtLjE2NiAxLjM1NS0uNDkyIDEuNzEzLS4zMzMuMzY1LS45MTYuNTQtMS43NDkuNTRoLTguNjM0Yy0uNzcyIDAtMS4zNDgtLjE3NS0xLjcwMy0uNTQtLjM1Ni0uMzU4LS41MzgtLjkyOS0uNTM4LTEuNzEzVjIzLjQ4NGMwLS44NDUuMTgyLTEuNDMxLjUzOC0xLjc1OC4zNTUtLjMzNS45MzEtLjQ5NSAxLjcwMy0uNDk1aDYuNDc1YzEuMzc5IDAgMi4yMTIuNjYyIDIuNTE1IDEuOTg3bC43MTkgMi40MzZ6TTg5LjgyNSAyMy40ODZjMC0uODQ1LjE4Mi0xLjQzMS41MzgtMS43NTkuMzY0LS4zMzUuOTMyLS41MDIgMS43MTItLjUwMmg4LjYyNWMuODQxIDAgMS40MjQuMTY3IDEuNzUuNTAyLjMzMy4zMjguNS45MTQuNSAxLjc1OXY0MS42MzhjMCAuNzg0LS4xNjcgMS4zNjItLjUgMS43Mi0uMzI2LjM1OC0uOTA5LjU0MS0xLjc1LjU0MWgtOC42MjVjLS43OCAwLTEuMzQ4LS4xODMtMS43MTItLjU0MS0uMzU2LS4zNTgtLjUzOC0uOTM2LS41MzgtMS43MlYyMy40ODZ6TTk2LjM4NCAxNC4wOTJjLTIuMjggMC00LjEwNS0uNjMyLTUuNDgzLTEuODk1LTEuMzc4LTEuMjcxLTIuMDYtMi45ODQtMi4wNi01LjE1NCAwLTIuMTY5LjY4Mi0zLjg4MiAyLjA2LTUuMTQ1QzkyLjI3OS42MzQgOTQuMTA0LjAwMiA5Ni4zODQuMDAyYzIuMjc5IDAgNC4xMDQuNjMyIDUuNDgzIDEuODk2IDEuMzc4IDEuMjYzIDIuMDY3IDIuOTc2IDIuMDY3IDUuMTQ1IDAgMi4xNy0uNjg5IDMuODgzLTIuMDY3IDUuMTU0LTEuMzc5IDEuMjYzLTMuMjA0IDEuODk1LTUuNDgzIDEuODk1ek02Ni4zMTYgMjguMDkyYzIuMzkzLTIuNjQ5IDQuNjU3LTQuNTI5IDYuNzg1LTUuNjQ4YTE0LjQ0MSAxNC40NDEgMCAwMTYuNzg2LTEuNjY3aDEuMjU3Yy44NCAwIDEuNDM5LjE2OCAxLjc5NS40OTUuMzYzLjMzNS41MzcuOTIxLjUzNyAxLjc1OHY3LjU5YzAgLjc4NC0uMTU5IDEuMzU1LS40OTIgMS43Mi0uMzI2LjM1OC0uOTA5LjU0LTEuNzQ5LjU0LS40MjQgMC0uOTYyLS4wMy0xLjYyMS0uMDkxYTI4LjI2NiAyOC4yNjYgMCAwMC0yLjUxNC0uMDkxYy0xLjM3OSAwLTMuMDUyLjE5OC01LjAzNi41ODYtMS45NzcuMzk2LTMuNjUxLjg5LTUuMDI5IDEuNDkydjMwLjM0OWMwIC43ODQtLjE2NiAxLjM1NS0uNDkyIDEuNzIxLS4zMzMuMzU3LS45MTYuNTQtMS43NTcuNTRINTYuMTZjLS43OCAwLTEuMzQ4LS4xODMtMS43MDQtLjU0LS4zNjMtLjM2Ni0uNTQ1LS45MzctLjU0NS0xLjcyMVYyMy40ODdjMC0uODQ1LjE4Mi0xLjQzMS41NDUtMS43NjYuMzU2LS4zMjcuOTI0LS40OTUgMS43MDQtLjQ5NWg2LjQ2OGMxLjM3OCAwIDIuMjE5LjY2MyAyLjUyMiAxLjk4N2wxLjE2NiA0Ljg3OXpNMjYuMjQ4IDE5Ljg3NWM1LjgwOCAwIDEwLjQwNSAyLjEzOSAxMy43OSA2LjQxIDMuMzg1IDQuMjc4IDUuMDgyIDEwLjA1NSA1LjA4MiAxNy4zNDggMCA0Ljk5My0uODQxIDkuMzYyLTIuNTE1IDEzLjA5Mi0xLjY4MSAzLjczOC0zLjk2IDYuNjE1LTYuODMxIDguNjI1LTIuODc3IDIuMDI1LTYuMTcyIDMuMDI5LTkuODkgMy4wMjktMi40NTQgMC00Ljc5NC0uMzg4LTcuMDA1LTEuMTcyLTIuMjE5LS43ODQtNC4xMDUtMS44NjUtNS42NjUtMy4yNXYxOS43NzZjMCAuODQ1LS4xNjYgMS40MzEtLjQ5MiAxLjc2Ni0uMzMzLjMyNy0uOTE2LjQ5NS0xLjc1Ny40OTVIMi4zNGMtLjc4IDAtMS4zNDgtLjE2OC0xLjcwNC0uNDk1LS4zNjQtLjMzNS0uNTQ2LS45MjEtLjU0Ni0xLjc2NnYtNjAuMjVjMC0uODM3LjE4Mi0xLjQyMy41NDYtMS43NTguMzU2LS4zMzUuOTI0LS40OTUgMS43MDQtLjQ5NWg2LjQ3NGMxLjM3OSAwIDIuMjEyLjY2MiAyLjUxNSAxLjk4N2wuNjI4IDIuMzQ0YzEuNzk1LTEuNzQzIDMuOTY5LTMuMTI4IDYuNTEzLTQuMTU2IDIuNTQ1LTEuMDIgNS4xNDItMS41MyA3Ljc3OC0xLjUzem0tNC4yMjYgOS45MzRjLTMuMTEzIDAtNi4wNTEuODE0LTguODA4IDIuNDM2djIzLjc1N2MyLjYzNiAxLjYyOSA1LjU3NCAyLjQ0NCA4LjgwOCAyLjQ0NCAzLjM1NSAwIDUuODI0LTEuMTQyIDcuNDE0LTMuNDMzIDEuNTktMi4yOTIgMi4zODUtNS45IDIuMzg1LTEwLjg0IDAtNS4wMDEtLjc4LTguNjQtMi4zNC0xMC45MzEtMS41Ni0yLjI5MS00LjA0NC0zLjQzMy03LjQ1OS0zLjQzM3oiLz48L2c+PC9zdmc+" alt="prime video"></a>
+                </div>
+
+                
+                <nav>
+                    <a class="activo" href="#">Inicio</a>
+                    <a href="#">Series</a>
+                    <a href="#">Peliculas</a>
+                    <a href="#">Categorias</a>
+                    
+                </nav>
+            </div>
+
+            <div class="nav-contenedor-3">
+
+                <div class="buscador">
+                    <input type="image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxjaXJjbGUgaWQ9ImEiIGN4PSI4IiBjeT0iOCIgcj0iOCIvPjxtYXNrIGlkPSJiIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjZmZmIj48dXNlIHhsaW5rOmhyZWY9IiNhIi8+PC9tYXNrPjwvZGVmcz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii43Ij48dXNlIHN0cm9rZT0iI0ZGRiIgbWFzaz0idXJsKCNiKSIgc3Ryb2tlLXdpZHRoPSI0IiB4bGluazpocmVmPSIjYSIvPjxwYXRoIGQ9Ik0xMy40MTQgMTFsNi4zNjcgNi4zNjdhLjk5NS45OTUgMCAwMS0uMDAzIDEuNDExYy0uMzkuMzktMS4wMy4zODUtMS40MS4wMDNMMTIgMTIuNDE0IDEzLjQxNCAxMXoiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+" class="image_buscar">
+                    <input type="text" placeholder="Buscar" class="buscar">
+                </div>
+
+                <div class="cuenta">
+                    <a href="#"><img src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" alt="imagen-cuenta" class="image-cuenta"></a>
+                    <a class="usuario" href="#">Usuario</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        
+        <!--Carrusel principal-->
+        
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+         </div>
+         <div class="caja-truco"></div>
+
+        <!--Otros carruseles?-->
+        <div class="movies">
+            <h2>
+                <br>
+                Amazon Originals
+            </h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/atv-aps-images/encoded/C2A2_AOM/MX.CL.AR.CO.PE.DO.EC.SV.GT.HN.NI.PA.PY.UY.BO.CR.PR/es_ES/COVER_ART/CLEAN/KeyArt._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7ebba60cc08ce9473268b4d94498c114c8e46d64d464221ece008d66bf5ea9c8._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8c72b58c0b2e73d269e902bd72a31cf1d203c02c9f0aeec9b2e2c2fb699a0ee5._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d0c2bcfdafde81da9a82e1a25c0d88b6d1319d5c2af8c5855281dc264bbe1221._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/atv-aps-images/encoded/MRDN_S1/CL.AR.CO.PE.MX.ES/es_MX.es_ES/COVER_ART/CLEAN/RUNNING_BALL._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/atv-aps-images/encoded/HTL4_AOM/*/es_ES/COVER_ART/NEW_MOVIE/MavisTransform._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/atv-aps-images/encoded/LTUM_S1/*/es_ES/COVER_ART/WATCH_TEASER/HoldingHands._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c8392b393d2ceffbdc5d4fd6d1f6a8fe25f7a55d2251610be99de78f0606897d._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+            </div>
+        </div>
+        
+        
+        <div class="movies">
+            <h2>Películas policíacas</h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f2b3322d66d213da9c52970ce747d5f0b97629315e0be3eb9212673dcabd09c0._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/88b79e2b00e8d94445a63957a5c2ae9696cc53edc5c729d64c5ce22247813d88._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/67791aaf9657e94c5d2069fe6d9e8a3030d822139e3d1230a9e9bf2fbc55606e._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/b291c2aef2b55221dc6932d8c232407588c69e8b8d0572cd4e92dac2eb7db837._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/cfabd886caec7b0af70cc1203a0feddd5b8eff3fdf2df31c50790d7838fecf6f._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f2b3322d66d213da9c52970ce747d5f0b97629315e0be3eb9212673dcabd09c0._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/88b79e2b00e8d94445a63957a5c2ae9696cc53edc5c729d64c5ce22247813d88._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/67791aaf9657e94c5d2069fe6d9e8a3030d822139e3d1230a9e9bf2fbc55606e._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/b291c2aef2b55221dc6932d8c232407588c69e8b8d0572cd4e92dac2eb7db837._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/cfabd886caec7b0af70cc1203a0feddd5b8eff3fdf2df31c50790d7838fecf6f._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+            </div>
+        </div>
+
+        <div class="movies">
+            <h2>Películas de acción y aventura</h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d68f7dbc6e5298dc3a3555ef65dc1412ee5a3d6b551a01f3e64866c61b708a2d._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f90765d3c9ee8680fb4f9561353ac7340c99b002925c3a38c177f439ba11d546._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ca4d29a56eb8d28c097fcc1a395236b5a6bf842647fa19aadcae45ab7e28b805._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/01c9fb8f0e5733ce98d04daca956c34671e24017614a27c190d9d0f6b0a89942._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/05c1dc41d5406aeea7fa1e701c4f85dbe172d98b0339410e862d9452ab70bcc4._UR1920,1080_RI_SX356_FMwebp_.png" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d68f7dbc6e5298dc3a3555ef65dc1412ee5a3d6b551a01f3e64866c61b708a2d._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f90765d3c9ee8680fb4f9561353ac7340c99b002925c3a38c177f439ba11d546._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ca4d29a56eb8d28c097fcc1a395236b5a6bf842647fa19aadcae45ab7e28b805._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/01c9fb8f0e5733ce98d04daca956c34671e24017614a27c190d9d0f6b0a89942._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/05c1dc41d5406aeea7fa1e701c4f85dbe172d98b0339410e862d9452ab70bcc4._UR1920,1080_RI_SX356_FMwebp_.png" alt="movie" class="img-movie">
+            </div>
+        </div>
+
+        <div class="movies">
+            <h2>Películas infantiles y familiares</h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/35a30e40b93e9aa7381e9072a7da3659574c38f3b13b50e8681fedfbbb6b832a._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5848644849091937b40dbe5098920658cdd88124f00f75a9b3d404123ac79dec._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7615a578e4665a48599baa0ee654865fbe2d260708eb40d0144fd02ca7b977b0._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/e6bad3f8cbb5117f2fd4407120da8a5691db83be2d47ddf7fd0828ea9246f426._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/61b528239f1db9c252cc2f928b43076a00ac8408e9833587694d491d3f3346e9._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/35a30e40b93e9aa7381e9072a7da3659574c38f3b13b50e8681fedfbbb6b832a._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5848644849091937b40dbe5098920658cdd88124f00f75a9b3d404123ac79dec._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7615a578e4665a48599baa0ee654865fbe2d260708eb40d0144fd02ca7b977b0._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/e6bad3f8cbb5117f2fd4407120da8a5691db83be2d47ddf7fd0828ea9246f426._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/61b528239f1db9c252cc2f928b43076a00ac8408e9833587694d491d3f3346e9._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+            </div>
+        </div>
+
+        <div class="movies">
+            <h2>Cine dramático</h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/90b34fadd207aabf7f6cb4ac42c9d7d7cf3d9489b1fe2d6e714c8ac7e89abdc2._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/36ad8640ec2cc3824ce1405d2a6eb433e533c9ee0b2628a7d906ecc3001025d2._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c2908e68fc65f1fda50e31275d2c0ab8d757a2a6e2f5f68e29cb548da2a29d3b._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7ea463c1f17166fbbffb71f512b26b442bf4b06113a470d797cc00ed07b2b524._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/56623312a070a8256c68bc4ab3aa1f9fb1316c7542f7205992f3dc26e552baa5._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/90b34fadd207aabf7f6cb4ac42c9d7d7cf3d9489b1fe2d6e714c8ac7e89abdc2._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/36ad8640ec2cc3824ce1405d2a6eb433e533c9ee0b2628a7d906ecc3001025d2._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c2908e68fc65f1fda50e31275d2c0ab8d757a2a6e2f5f68e29cb548da2a29d3b._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7ea463c1f17166fbbffb71f512b26b442bf4b06113a470d797cc00ed07b2b524._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/56623312a070a8256c68bc4ab3aa1f9fb1316c7542f7205992f3dc26e552baa5._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+            </div>
+        </div>
+
+        <div class="movies">
+            <h2>Películas de terror</h2>
+            <div class="movies-img">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ab3f9eeea2a8b3c92bfee7306872a20dd5c627ed88c26ffabf7df229c8a0b9fe._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/420e03a61404795e9434278ad1e7cda0eacee9be869896da82d562fb8874b4d9._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8f39b2bdb4695dc34e39d77dc7e1e9262614233e0278a902a43b376e7d9c6c5a._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/9c6352e95b0ce1622335b66bd6a4109ae8b67e6ac6bb5f8939ce644fdba5f285._UR1920,1080_RI_SX356_FMwebp_.png" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/be6247150effd95d4ef0922332baa4d00d6b8d47ca5529ee723a2f001afb9650._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ab3f9eeea2a8b3c92bfee7306872a20dd5c627ed88c26ffabf7df229c8a0b9fe._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/420e03a61404795e9434278ad1e7cda0eacee9be869896da82d562fb8874b4d9._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8f39b2bdb4695dc34e39d77dc7e1e9262614233e0278a902a43b376e7d9c6c5a._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/9c6352e95b0ce1622335b66bd6a4109ae8b67e6ac6bb5f8939ce644fdba5f285._UR1920,1080_RI_SX356_FMwebp_.png" alt="movie" class="img-movie">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/be6247150effd95d4ef0922332baa4d00d6b8d47ca5529ee723a2f001afb9650._UR1920,1080_RI_SX356_FMwebp_.jpg" alt="movie" class="img-movie">
+            </div>
+        </div>
+
+        
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="logo">
+            <a href="#"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDczIiBoZWlnaHQ9IjE0NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMTQuODMgOTIuMzY2Yy4xNTgtMS4wMjMuOTY3LTEuODAyIDIuMDkxLTEuODAyLjUyNCAwIDEuMTE4LjE3MSAxLjc0NC41NjIgMzQuNzMxIDIxLjc4MSA3Ny42OTcgMzQuOTAzIDEyMi4wNjcgMzQuOTAzIDI5Ljk0MyAwIDYyLjg0MS02LjcwMSA5My4xMTctMjAuNTQ0IDQuNTYzLTIuMDc5IDguMzg2IDMuMjM5IDMuOTIyIDYuODExLTI3LjAwOCAyMS40NzItNjYuMTYzIDMyLjg5Ny05OS44NzkgMzIuODk3LTQ3LjI0OCAwLTg5Ljc5NS0xOC44My0xMjIuMDA0LTUwLjE2OC0uNjMyLS42MTQtLjk2NC0xLjI4Ny0xLjA1OC0xLjkxOXYtLjc0eiIvPjxwYXRoIGQ9Ik0zMTUuNDkzIDk1Ljc1MWM3Ljk4Ni02LjAzIDE4LjYwNC04LjA0MiAyNy40MDgtOC4wNDIgOC4yMzUgMCAxNC44ODYgMS43NjMgMTYuMzAyIDMuNjQ4IDIuOTc2IDMuOTMzLS43NjYgMzEuMjAxLTE1LjI2MSA0NC4yMDYtMi4yMTggMi4wMTQtNC4zMjguOTI5LTMuMzUtMS42OTkgMy4yNTktOC43MjIgMTAuNTUzLTI4LjMwNiA3LjA5Ni0zMy4wNTQtMy40NTItNC43NTktMjIuODM1LTIuMjY4LTMxLjUyNy0xLjE0NS0xLjM0Ny4xNzEtMi4xMTMtLjM4LTIuMjI1LTEuMjAxdi0uNDQzYy4wOTEtLjcxMi41OTYtMS41NDMgMS41NTctMi4yN3pNNDUwLjM1OSAxOS44NjNjNy4xIDAgMTIuNjQ4IDIuMTUyIDE2LjY0NSA2LjQ1NkM0NzEuMDAxIDMwLjYyMiA0NzMgMzYuNTk2IDQ3MyA0NC4yNDFjMCA3LjcwNC0xLjk5OSAxMy43MDgtNS45OTYgMTguMDEyLTMuOTk3IDQuMzA0LTkuNTQ1IDYuNDU2LTE2LjY0NSA2LjQ1Ni03LjA5OSAwLTEyLjY0OC0yLjE1Mi0xNi42NDUtNi40NTZzLTUuOTk2LTEwLjMwOC01Ljk5Ni0xOC4wMTJjMC03LjY0NSAxLjk5OS0xMy42MTkgNS45OTYtMTcuOTIyIDMuOTk3LTQuMzA0IDkuNTQ2LTYuNDU2IDE2LjY0NS02LjQ1NnptMCAxMC4xMTJjLTYuMjY0IDAtOS4zOTYgNC43NTUtOS4zOTYgMTQuMjY2IDAgOS41NyAzLjEzMiAxNC4zNTUgOS4zOTYgMTQuMzU1IDYuMjY0IDAgOS4zOTctNC43ODUgOS4zOTctMTQuMzU1IDAtOS41MTEtMy4xMzMtMTQuMjY2LTkuMzk3LTE0LjI2NnpNNDAzLjE5MSAyMC4yOWM1LjQzMiAwIDkuNjg0IDEuMzI4IDEyLjc0NyAzLjk4NCAzLjA2NCAyLjY1NyA0LjU5OSA2LjIwMSA0LjU5OSAxMC42MjYgMCA0LjQzMi0xLjY1MyA3Ljc4Mi00Ljk0NSAxMC4wNTEtMy4zIDIuMjc1LTguMTY0IDMuNDEtMTQuNTg2IDMuNDEtMy4zMjkgMC02LjIyMy0uMzIxLTguNjczLS45Ny4zNDcgMy45NTQgMS41MzUgNi43OSAzLjU1IDguNDk5IDIuMDE1IDEuNzA4IDUuMDY0IDIuNTY2IDkuMTUzIDIuNTY2IDEuNjMxIDAgMy4yMjYtLjEwNCA0Ljc3Ni0uMzEzIDEuNTQzLS4yMDIgMy42OTEtLjY2NCA2LjQzNy0xLjM2Ni4xNjktLjA1OS4zNDYtLjEwNC41MjQtLjEzNC4xNzctLjAzLjMxNy0uMDQ1LjQzNS0uMDQ1Ljk5NyAwIDEuNDkxLjY3OSAxLjQ5MSAyLjAzN3Y0LjA3NWMwIC45NC0uMTMzIDEuNjA0LS4zOTEgMS45OTItLjI2Ni4zOC0uNzc1LjcyNC0xLjUzNSAxLjAxNS00LjI2NyAxLjY0OS04Ljc5MiAyLjQ3Ny0xMy41ODIgMi40NzctNy4yNDEgMC0xMi44LTItMTYuNjgyLTYuMDIyLTMuODgzLTQuMDE0LTUuODI0LTkuNzY3LTUuODI0LTE3LjI2NiAwLTcuNjcxIDEuOTg1LTEzLjY5MiA1Ljk1Ni0xOC4wNTggMy45NzItNC4zNzIgOS40ODYtNi41NTggMTYuNTUtNi41NTh6bS0uOTYgOC45NDZjLTUuNjEgMC04Ljg1IDMuNDg1LTkuNzIxIDEwLjQ0NyAyLjMzMi40NzcgNC45MzEuNzA5IDcuNzk1LjcwOSAyLjk3NCAwIDUuMTM3LS40NTYgNi40OC0xLjM3MyAxLjM0NC0uOTExIDIuMDE2LTIuMzE0IDIuMDE2LTQuMjAxIDAtMy43MjQtMi4xOTMtNS41ODItNi41Ny01LjU4MnpNMzY5LjA2OS41NDJjLjgzNSAwIDEuNDE3LjE2NSAxLjc0NS40OTYuMzI4LjMzMS40OTIuOTE4LjQ5MiAxLjc2MXY2Mi4yOThjMCAuNzgzLS4xNjQgMS4zNTQtLjQ5MiAxLjcxNi0uMzI4LjM2MS0uOTEuNTQxLTEuNzQ1LjU0MWgtNy4xNTljLS43MTYgMC0xLjI2OC0uMTUtMS42NTYtLjQ1MS0uMzg3LS4zMDEtLjY3MS0uODEzLS44NS0xLjUzNWwtLjUzNy0yLjA3N2MtMy42OTkgMy4zNzEtOC4wODMgNS4wNTYtMTMuMTU1IDUuMDU2LTMuODc3IDAtNy4yNDgtMS4wMDgtMTAuMTEyLTMuMDI0LTIuODY0LTIuMDE3LTUuMDU2LTQuODE1LTYuNTc3LTguMzk3LTEuNTIyLTMuNTgxLTIuMjgyLTcuNzE5LTIuMjgyLTEyLjQxNCAwLTcuNDY0IDEuNzU5LTEzLjQzOCA1LjI3OS0xNy45MjIgMy41Mi00LjQ4NSA4LjE3NC02LjcyNyAxMy45NjEtNi43MjcgNC43MTMgMCA4LjggMS4zNTQgMTIuMjYgNC4wNjNWMi43OTljMC0uODQzLjE3OS0xLjQzLjUzNy0xLjc2MS4zNTgtLjMzMS45MjUtLjQ5NiAxLjctLjQ5Nmg4LjU5MXptLTE5LjY4OCAyOS4yNTNjLTMuMTYyIDAtNS41MTggMS4xODktNy4wNjkgMy41NjYtMS41NTEgMi4zNzgtMi4zMjcgNS45NzQtMi4zMjcgMTAuNzg5IDAgNC44MTYuODIgOC4zOTcgMi40NjEgMTAuNzQ1IDEuNjQxIDIuMzQ3IDQuMTYxIDMuNTIxIDcuNTYyIDMuNTIxIDIuODY0IDAgNS42MDgtLjg0MyA4LjIzMy0yLjUyOFYzMi4wNTJjLTIuNTY1LTEuNTA1LTUuNTE5LTIuMjU3LTguODYtMi4yNTd6TTMwNy4zMjMgNjcuMzU0Yy0uNzc2IDAtMS4zNDMtLjE4LTEuNzAxLS41NDEtLjM1OC0uMzYyLS41MzctLjkzMy0uNTM3LTEuNzE2VjIzLjQ3NWMwLS44NDMuMTc5LTEuNDMuNTM3LTEuNzYxLjM1OC0uMzMxLjkyNS0uNDk3IDEuNzAxLS40OTdoOC41OTFjLjgzNSAwIDEuNDE3LjE2NiAxLjc0NS40OTcuMzI4LjMzMS40OTIuOTE4LjQ5MiAxLjc2MXY0MS42MjJjMCAuNzgzLS4xNjQgMS4zNTQtLjQ5MiAxLjcxNi0uMzI4LjM2MS0uOTEuNTQxLTEuNzQ1LjU0MWgtOC41OTF6TTMxMS42MTggMTQuMDg1Yy0yLjI2NyAwLTQuMDg3LS42MzItNS40NTktMS44OTYtMS4zNzItMS4yNjQtMi4wNTgtMi45OC0yLjA1OC01LjE0NyAwLTIuMTY2LjY4Ni0zLjg4MiAyLjA1OC01LjE0NkMzMDcuNTMxLjYzMiAzMDkuMzUxIDAgMzExLjYxOCAwYzIuMjY3IDAgNC4wODcuNjMyIDUuNDU5IDEuODk2IDEuMzcyIDEuMjY0IDIuMDU4IDIuOTggMi4wNTggNS4xNDYgMCAyLjE2Ny0uNjg2IDMuODgzLTIuMDU4IDUuMTQ3LTEuMzcyIDEuMjY0LTMuMTkyIDEuODk2LTUuNDU5IDEuODk2ek0yNzEuODIyIDY3LjM1NGMtLjU5NyAwLTEuMDg5LS4wNzUtMS40NzctLjIyNWEyLjM0IDIuMzQgMCAwMS0uOTg0LS43MjNjLS4yNjktLjMzMS0uNTIyLS43OTctLjc2MS0xLjM5OWwtMTUuMzAzLTQwLjE3OGEzNi43MjQgMzYuNzI0IDAgMDEtLjQ0Ny0xLjI2NCAzLjE5NiAzLjE5NiAwIDAxLS4xNzktLjk5M2MwLS45MDMuNTk3LTEuMzU1IDEuNzktMS4zNTVoOC45NDljLjk1NCAwIDEuNjU1LjE4MSAyLjEwMy41NDIuNDQ3LjM2MS43OS45NjMgMS4wMjkgMS44MDZsOS4yMTcgMzEuOTYyIDkuMzk3LTMxLjk2MmMuMjM4LS44NDMuNTgxLTEuNDQ1IDEuMDI5LTEuODA2LjQ0Ny0uMzYxIDEuMTQ4LS41NDIgMi4xMDMtLjU0Mmg4LjY4YzEuMTk0IDAgMS43OS40NTIgMS43OSAxLjM1NSAwIC4zMDEtLjA1OS42MzItLjE3OS45OTMtLjExOS4zNjEtLjI2OC43ODItLjQ0NyAxLjI2NGwtMTUuMzAzIDQwLjE3OGMtLjIzOS42MDItLjQ5MiAxLjA2OC0uNzYxIDEuMzk5YTIuNDA2IDIuNDA2IDAgMDEtLjkzOS43MjNjLS4zNTguMTUtLjg2NS4yMjUtMS41MjIuMjI1aC03Ljc4NXpNMjE0LjcxNyAxOS44NjljNS41NzQgMCA5LjkzNiAxLjM1NSAxMy4wNzkgNC4wNjUgMy4xNDIgMi43MSA0LjcxOCA2LjMyNiA0LjcxOCAxMC44NCAwIDQuNTIxLTEuNjk3IDcuOTM5LTUuMDc0IDEwLjI1My0zLjM4NiAyLjMyMi04LjM3NiAzLjQ3OS0xNC45NjUgMy40NzktMy40MTUgMC02LjM4NC0uMzI4LTguODk4LS45OS4zNTYgNC4wMzUgMS41NzUgNi45MjcgMy42NDMgOC42NyAyLjA2NyAxLjc0NCA1LjE5NSAyLjYxOSA5LjM5IDIuNjE5IDEuNjc0IDAgMy4zMS0uMTA3IDQuOS0uMzIgMS41ODMtLjIwNSAzLjc4Ni0uNjc3IDYuNjA0LTEuMzkzYTMuMzMgMy4zMyAwIDAxLjUzNy0uMTM3Yy4xODItLjAzLjMyNi0uMDQ2LjQ0Ny0uMDQ2IDEuMDIyIDAgMS41My42OTMgMS41MyAyLjA3OXY0LjE1NmMwIC45NTktLjEzNyAxLjYzNi0uNDAyIDIuMDMyLS4yNzIuMzg4LS43OTUuNzM5LTEuNTc1IDEuMDM1LTQuMzc3IDEuNjgzLTkuMDE5IDIuNTI4LTEzLjkzNCAyLjUyOC03LjQyOSAwLTEzLjEzMi0yLjA0LTE3LjExNS02LjE0My0zLjk4NC00LjA5Ni01Ljk3NS05Ljk2NC01Ljk3NS0xNy42MTUgMC03LjgyNSAyLjAzNy0xMy45NjggNi4xMTEtMTguNDIxIDQuMDc0LTQuNDYxIDkuNzMyLTYuNjkxIDE2Ljk3OS02LjY5MXptLS45ODUgOS4xMjdjLTUuNzU1IDAtOS4wOCAzLjU1NS05Ljk3MyAxMC42NTcgMi4zOTMuNDg3IDUuMDU5LjcyMyA3Ljk5Ny43MjMgMy4wNTIgMCA1LjI3MS0uNDY0IDYuNjQ5LTEuNDAxIDEuMzc4LS45MjggMi4wNjctMi4zNTkgMi4wNjctNC4yODUgMC0zLjc5OS0yLjI0OS01LjY5NC02Ljc0LTUuNjk0ek0xMjYuMDIzIDI1LjY1NGMzLjE3My0yLjEwOSA2LjAzNi0zLjYwMSA4LjU4LTQuNDY5YTI0LjA2MyAyNC4wNjMgMCAwMTcuODY5LTEuMzE3YzUuMzkyIDAgOS4xOTMgMS45MzQgMTEuNDEyIDUuNzg2IDMuMDUyLTIuMDQ4IDUuOTMtMy41MjUgOC42MjYtNC40MjNhMjYuMDY0IDI2LjA2NCAwIDAxOC4zNTMtMS4zNjNjNC4xOTUgMCA3LjQ0NCAxLjE4IDkuNzU0IDMuNTI1IDIuMzAyIDIuMzUyIDMuNDYxIDUuNjMzIDMuNDYxIDkuODVWNjUuMTNjMCAuNzg0LS4xNjcgMS4zNTUtLjQ5MiAxLjcxMy0uMzM0LjM2NS0uOTE3LjU0LTEuNzU3LjU0aC04LjYyNmMtLjc4IDAtMS4zNDgtLjE3NS0xLjcwNC0uNTQtLjM2My0uMzU4LS41NDUtLjkyOS0uNTQ1LTEuNzEzVjM2LjEzNWMwLTQuMDk1LTEuODI1LTYuMTQzLTUuNDgzLTYuMTQzLTMuMjM0IDAtNi40OTguNzc3LTkuNzkyIDIuMzQ1VjY1LjEzYzAgLjc4NC0uMTY3IDEuMzU1LS40OTIgMS43MTMtLjMzMy4zNjUtLjkxNy41NC0xLjc1Ny41NGgtOC42MjZjLS43OCAwLTEuMzQ4LS4xNzUtMS43MDQtLjU0LS4zNjMtLjM1OC0uNTM3LS45MjktLjUzNy0xLjcxM1YzNi4xMzVjMC00LjA5NS0xLjgzMy02LjE0My01LjQ4My02LjE0My0zLjM1NSAwLTYuNjQ5LjgwNy05Ljg5MSAyLjQzNlY2NS4xM2MwIC43ODQtLjE2NiAxLjM1NS0uNDkyIDEuNzEzLS4zMzMuMzY1LS45MTYuNTQtMS43NDkuNTRoLTguNjM0Yy0uNzcyIDAtMS4zNDgtLjE3NS0xLjcwMy0uNTQtLjM1Ni0uMzU4LS41MzgtLjkyOS0uNTM4LTEuNzEzVjIzLjQ4NGMwLS44NDUuMTgyLTEuNDMxLjUzOC0xLjc1OC4zNTUtLjMzNS45MzEtLjQ5NSAxLjcwMy0uNDk1aDYuNDc1YzEuMzc5IDAgMi4yMTIuNjYyIDIuNTE1IDEuOTg3bC43MTkgMi40MzZ6TTg5LjgyNSAyMy40ODZjMC0uODQ1LjE4Mi0xLjQzMS41MzgtMS43NTkuMzY0LS4zMzUuOTMyLS41MDIgMS43MTItLjUwMmg4LjYyNWMuODQxIDAgMS40MjQuMTY3IDEuNzUuNTAyLjMzMy4zMjguNS45MTQuNSAxLjc1OXY0MS42MzhjMCAuNzg0LS4xNjcgMS4zNjItLjUgMS43Mi0uMzI2LjM1OC0uOTA5LjU0MS0xLjc1LjU0MWgtOC42MjVjLS43OCAwLTEuMzQ4LS4xODMtMS43MTItLjU0MS0uMzU2LS4zNTgtLjUzOC0uOTM2LS41MzgtMS43MlYyMy40ODZ6TTk2LjM4NCAxNC4wOTJjLTIuMjggMC00LjEwNS0uNjMyLTUuNDgzLTEuODk1LTEuMzc4LTEuMjcxLTIuMDYtMi45ODQtMi4wNi01LjE1NCAwLTIuMTY5LjY4Mi0zLjg4MiAyLjA2LTUuMTQ1QzkyLjI3OS42MzQgOTQuMTA0LjAwMiA5Ni4zODQuMDAyYzIuMjc5IDAgNC4xMDQuNjMyIDUuNDgzIDEuODk2IDEuMzc4IDEuMjYzIDIuMDY3IDIuOTc2IDIuMDY3IDUuMTQ1IDAgMi4xNy0uNjg5IDMuODgzLTIuMDY3IDUuMTU0LTEuMzc5IDEuMjYzLTMuMjA0IDEuODk1LTUuNDgzIDEuODk1ek02Ni4zMTYgMjguMDkyYzIuMzkzLTIuNjQ5IDQuNjU3LTQuNTI5IDYuNzg1LTUuNjQ4YTE0LjQ0MSAxNC40NDEgMCAwMTYuNzg2LTEuNjY3aDEuMjU3Yy44NCAwIDEuNDM5LjE2OCAxLjc5NS40OTUuMzYzLjMzNS41MzcuOTIxLjUzNyAxLjc1OHY3LjU5YzAgLjc4NC0uMTU5IDEuMzU1LS40OTIgMS43Mi0uMzI2LjM1OC0uOTA5LjU0LTEuNzQ5LjU0LS40MjQgMC0uOTYyLS4wMy0xLjYyMS0uMDkxYTI4LjI2NiAyOC4yNjYgMCAwMC0yLjUxNC0uMDkxYy0xLjM3OSAwLTMuMDUyLjE5OC01LjAzNi41ODYtMS45NzcuMzk2LTMuNjUxLjg5LTUuMDI5IDEuNDkydjMwLjM0OWMwIC43ODQtLjE2NiAxLjM1NS0uNDkyIDEuNzIxLS4zMzMuMzU3LS45MTYuNTQtMS43NTcuNTRINTYuMTZjLS43OCAwLTEuMzQ4LS4xODMtMS43MDQtLjU0LS4zNjMtLjM2Ni0uNTQ1LS45MzctLjU0NS0xLjcyMVYyMy40ODdjMC0uODQ1LjE4Mi0xLjQzMS41NDUtMS43NjYuMzU2LS4zMjcuOTI0LS40OTUgMS43MDQtLjQ5NWg2LjQ2OGMxLjM3OCAwIDIuMjE5LjY2MyAyLjUyMiAxLjk4N2wxLjE2NiA0Ljg3OXpNMjYuMjQ4IDE5Ljg3NWM1LjgwOCAwIDEwLjQwNSAyLjEzOSAxMy43OSA2LjQxIDMuMzg1IDQuMjc4IDUuMDgyIDEwLjA1NSA1LjA4MiAxNy4zNDggMCA0Ljk5My0uODQxIDkuMzYyLTIuNTE1IDEzLjA5Mi0xLjY4MSAzLjczOC0zLjk2IDYuNjE1LTYuODMxIDguNjI1LTIuODc3IDIuMDI1LTYuMTcyIDMuMDI5LTkuODkgMy4wMjktMi40NTQgMC00Ljc5NC0uMzg4LTcuMDA1LTEuMTcyLTIuMjE5LS43ODQtNC4xMDUtMS44NjUtNS42NjUtMy4yNXYxOS43NzZjMCAuODQ1LS4xNjYgMS40MzEtLjQ5MiAxLjc2Ni0uMzMzLjMyNy0uOTE2LjQ5NS0xLjc1Ny40OTVIMi4zNGMtLjc4IDAtMS4zNDgtLjE2OC0xLjcwNC0uNDk1LS4zNjQtLjMzNS0uNTQ2LS45MjEtLjU0Ni0xLjc2NnYtNjAuMjVjMC0uODM3LjE4Mi0xLjQyMy41NDYtMS43NTguMzU2LS4zMzUuOTI0LS40OTUgMS43MDQtLjQ5NWg2LjQ3NGMxLjM3OSAwIDIuMjEyLjY2MiAyLjUxNSAxLjk4N2wuNjI4IDIuMzQ0YzEuNzk1LTEuNzQzIDMuOTY5LTMuMTI4IDYuNTEzLTQuMTU2IDIuNTQ1LTEuMDIgNS4xNDItMS41MyA3Ljc3OC0xLjUzem0tNC4yMjYgOS45MzRjLTMuMTEzIDAtNi4wNTEuODE0LTguODA4IDIuNDM2djIzLjc1N2MyLjYzNiAxLjYyOSA1LjU3NCAyLjQ0NCA4LjgwOCAyLjQ0NCAzLjM1NSAwIDUuODI0LTEuMTQyIDcuNDE0LTMuNDMzIDEuNTktMi4yOTIgMi4zODUtNS45IDIuMzg1LTEwLjg0IDAtNS4wMDEtLjc4LTguNjQtMi4zNC0xMC45MzEtMS41Ni0yLjI5MS00LjA0NC0zLjQzMy03LjQ1OS0zLjQzM3oiLz48L2c+PC9zdmc+" alt="prime video"></a>
+        </div>
+            <ul>
+                <li><a href="/ww-av-legal-home/ref=atv_ftr_ter" class="info-footer">Términos y Aviso de privacidad</a></li>
+                <li><a href="/contactus/ref=atv_ftr_cu" class="info-footer">Envíanos tus comentarios</a></li>
+                <li><a href="/help/ref=atv_ftr_hp" class="info-footer">Ayuda</a></li>
+                <li>©1996-2022, Amazon.com, Inc. o sus filiales</li>
+            </ul>
+
+    </footer>
+</body>
+</html>
